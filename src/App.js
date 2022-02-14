@@ -9,6 +9,8 @@ import {
 } from './components';
 import clsx from 'clsx';
 import useLoaded from './hooks/useLoaded';
+import { products } from './constants/product';
+import { programs } from './constants/program';
 
 function Hero() {
   const isLoaded = useLoaded();
@@ -42,36 +44,6 @@ function Hero() {
   );
 }
 function Program() {
-  const programs = [
-    {
-      image:
-        'https://res.cloudinary.com/dztdpfos7/image/upload/v1644734519/program/money_qty5oh.jpg',
-      name: 'Pembiayaan',
-      description:
-        'Menyalurkan dukungan dan edukasi finansial berbasis teknologi bagi para petaniuntuk meningkatkan produktivitas pertanian',
-    },
-    {
-      image:
-        'https://res.cloudinary.com/dztdpfos7/image/upload/v1644734519/program/monitor_ltbwn3.jpg',
-      name: 'Manajemen Rantai Pasok',
-      description:
-        'Memfasilitasi akses kebutuhan melalui mitra penyedia sarana kebutuhan di bidang pertanian secara transparan dan terstandarisasi',
-    },
-    {
-      image:
-        'https://res.cloudinary.com/dztdpfos7/image/upload/v1644734520/program/truck_tbttvn.jpg',
-      name: 'Distribusi dan Penjualan',
-      description:
-        'Memfasilitasi petani untuk menjual dan mendistribusikan hasil panen secara langsung dan mudah dengan harga yang terstandarisasi',
-    },
-    {
-      image:
-        'https://res.cloudinary.com/dztdpfos7/image/upload/v1644734519/program/monitor_ltbwn3.jpg',
-      name: 'Pengolahan Hasil Panen',
-      description:
-        'Memiliki fasilitas pengolahan hasil panen dari bahan mentah menjadi bahan yang siap didistribusi melalui mitra yang terintegritas dan diawasi langsung oleh kami',
-    },
-  ];
   return (
     <section className="pt-20 pb-24 sm:pt-28 sm:pb-32" id="program">
       <Container>
@@ -103,28 +75,6 @@ function Program() {
 }
 
 function Product() {
-  const products = [
-    {
-      image:
-        'https://res.cloudinary.com/dztdpfos7/image/upload/v1644734481/product/corn_z5kai4.jpg',
-      name: 'Jagung',
-    },
-    {
-      image:
-        'https://res.cloudinary.com/dztdpfos7/image/upload/v1644734481/product/rice_lgylhv.jpg',
-      name: 'Beras',
-    },
-    {
-      image:
-        'https://res.cloudinary.com/dztdpfos7/image/upload/v1644734694/product/gaplek_hvf7ta.jpg',
-      name: 'Gaplek',
-    },
-    {
-      image:
-        'https://res.cloudinary.com/dztdpfos7/image/upload/v1644734601/product/onggok_m60bv6.jpg',
-      name: 'Tepung Onggok',
-    },
-  ];
   return (
     <section className="py-20 sm:py-24 bg-gray-50" id="product">
       <Container>
